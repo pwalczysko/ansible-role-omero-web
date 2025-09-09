@@ -11,9 +11,9 @@
   ansible.builtin.include_role:
     name: python3_virtualenv
 
-- name: omero-web | Include ome.nginx role
+- name: omero-web | Include nginx role
   ansible.builtin.include_role:
-    name: ome.nginx
+    name: nginx
   when: omero_web_setup_nginx
 
 - name: omero-web | Include ome.basedeps role

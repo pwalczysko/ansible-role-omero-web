@@ -1,7 +1,10 @@
 ---
 
 - src: ome.omero_common
-- src: ome.nginx
+# - src: ome.nginx
+- name: nginx
+  src: https://github.com/pwalczysko/ansible-role-nginx
+  version: nginx-repo
 # - src: ome.python3_virtualenv
 - name: python3_virtualenv
   src: https://github.com/khaledk2/ansible-role-python3-virtualenv
