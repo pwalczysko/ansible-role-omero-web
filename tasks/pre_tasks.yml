@@ -7,9 +7,9 @@
   ansible.builtin.include_role:
     name: ome.selinux_utils
 
-- name: omero-web | Include ome.python3_virtualenv role
+- name: omero-web | Include python3_virtualenv role
   ansible.builtin.include_role:
-    name: ome.python3_virtualenv
+    name: python3_virtualenv
 
 - name: omero-web | Include ome.nginx role
   ansible.builtin.include_role:
