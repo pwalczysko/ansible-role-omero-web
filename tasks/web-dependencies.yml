@@ -15,6 +15,8 @@
 # Alternatively set httpd_can_network_connect=yes to allow all ports
 - name: omero web | selinux ports
   become: true
+  # Need to install VM-wide packages (e.g. libselinux-python3)
+  # using the "native" python for the VM - otherwise the task fails
   vars:
     ansible_python_interpreter: "/usr/bin/python"
   seport:
