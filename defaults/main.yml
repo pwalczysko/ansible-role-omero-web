@@ -84,7 +84,10 @@ omero_web_python_requirements:
 omero_web_python_version: "{{ python_version | replace('.', '') }}"
 
 # Path to virtualenv
-omero_web_virtualenv_basedir: "{{ omero_web_basedir + '/venv3' }}"
+omero_web_virtualenv_basedir: "{{ omero_web_basedir }}/{{ omero_web_env_name }}"
+
+# Virtualenv dir name
+omero_web_env_name: venv3
 
 # OMERODIR
 omero_web_omerodir: "{{ omero_web_basedir }}/{{ omero_web_symlink }}"
