@@ -35,6 +35,7 @@ provisioner:
         omero_web_systemd_start: false
         omero_web_setup_nginx: false
         omero_web_release: present
+        python_version: "3.12"
 scenario:
   name: inactive
 verifier:

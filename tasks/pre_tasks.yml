@@ -11,9 +11,7 @@
   ansible.builtin.include_role:
     name: python3_virtualenv
   vars:
-    python_version: "{{ python3_virtualenv_version }}"
     virtualenv_basedir: "{{ omero_web_basedir }}"
-    service_name: "omero-web"
 
 - name: omero-web | Include nginx role
   ansible.builtin.include_role:
