@@ -2,7 +2,9 @@
 
 - src: ome.omero_common
 - src: ome.nginx
-- src: ome.python3_virtualenv
+- name: python3_virtualenv
+  source: https://github.com/khaledk2/ansible-role-python3-virtualenv.git
+  version: fx_version_check
 - src: ome.selinux_utils
 - src: ome.redis
 - src: ome.basedeps
